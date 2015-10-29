@@ -1,0 +1,215 @@
+\hypertarget{classUMEventAction}{}\section{U\+M\+Event\+Action Class Reference}
+\label{classUMEventAction}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+
+
+{\ttfamily \#include $<$U\+M\+Event\+Action.\+hh$>$}
+
+
+
+Inheritance diagram for U\+M\+Event\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classUMEventAction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\+M\+Event\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classUMEventAction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUMEventAction_a81e4b6ebea6a9c34692964c08bd1a7c8}{U\+M\+Event\+Action} (ofstream \&total\+Hits, ofstream \&energy\+Hits)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classUMEventAction_a503b6634cb64db87aea320d1c8810692}{$\sim$\+U\+M\+Event\+Action} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classUMEventAction_af1288b6bdbdfbe40a9fafc13b84250db}{Begin\+Of\+Event\+Action} (const G4\+Event $\ast$an\+Event)
+\begin{DoxyCompactList}\small\item\em What happens at the beginning of Event? \end{DoxyCompactList}\item 
+void \hyperlink{classUMEventAction_ab31f064263770cd6f2daeca58ac160ee}{End\+Of\+Event\+Action} (const G4\+Event $\ast$an\+Event)
+\begin{DoxyCompactList}\small\item\em What happens at the end of an Event? \end{DoxyCompactList}\item 
+void \hyperlink{classUMEventAction_a5f4b755e2e7b9c61ed355b6e21dd93e0}{Set\+Root\+Saver} (\hyperlink{classUMRootSaver}{U\+M\+Root\+Saver} $\ast$saver)
+\begin{DoxyCompactList}\small\item\em Set up the R\+O\+O\+T saver. \end{DoxyCompactList}\item 
+\hyperlink{classUMSD}{U\+M\+S\+D} $\ast$ \hyperlink{classUMEventAction_a8748655e8f5afe57a0c7ed6e83038ee0}{Get\+Sensitive\+Detector} (G4\+String detname)
+\begin{DoxyCompactList}\small\item\em Get the sensitive detector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G4int \hyperlink{classUMEventAction_a93249ca25c9565def0692d174a3e535e}{hits\+Coll\+I\+D}
+\item 
+G4double \hyperlink{classUMEventAction_a5a3fe12d0cc54f760499e76675044531}{Total\+E\+Dep}
+\item 
+G4\+Three\+Vector \hyperlink{classUMEventAction_aca4a227170c74e840a4ff2748efc20a2}{position}
+\item 
+G4double \hyperlink{classUMEventAction_a08ad731762fc90f81d56438383ee7bd8}{E\+Dep}
+\item 
+G4int \hyperlink{classUMEventAction_a55440e417cd0da1c627acb845a1108b9}{Depos\+Count}
+\item 
+G4int \hyperlink{classUMEventAction_a42d549a67c09ac22be18a0724b3f35ad}{mum}
+\item 
+G4\+String \hyperlink{classUMEventAction_a3bf2d2815501186c39a1985f47b2f5ab}{particle}
+\item 
+G4\+String \hyperlink{classUMEventAction_a2eabd29838c45226cc745aaeaee2a957}{process}
+\item 
+G4double \hyperlink{classUMEventAction_a006e73f519211d125c5f2ac070fbf489}{xpos}
+\item 
+G4double \hyperlink{classUMEventAction_a06f954b93a1ec5dc1e74dbd0f08fa258}{ypos}
+\item 
+G4double \hyperlink{classUMEventAction_a6a8137a0ba95725f0bcd80f9a433dcb0}{zpos}
+\item 
+G4int \hyperlink{classUMEventAction_a70cb8cc9f3d9820a85aedf4d245f5435}{part\+Pdg\+Id}
+\item 
+\hyperlink{classUMRootSaver}{U\+M\+Root\+Saver} $\ast$ \hyperlink{classUMEventAction_a1ad55dd713ab67a94b7989e09a7d19a9}{R\+Saver}
+\item 
+std\+::ofstream \& \hyperlink{classUMEventAction_a9bbd91659dd5720ff846cb231f8b8a81}{ftotal\+Hits}
+\item 
+std\+::ofstream \& \hyperlink{classUMEventAction_a0a8010739f4395ee799c2b7a106263b2}{fenergy\+Hits}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classUMEventAction_a81e4b6ebea6a9c34692964c08bd1a7c8}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{U\+M\+Event\+Action(ofstream \&total\+Hits, ofstream \&energy\+Hits)}]{\setlength{\rightskip}{0pt plus 5cm}U\+M\+Event\+Action\+::\+U\+M\+Event\+Action (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{total\+Hits, }
+\item[{ofstream \&}]{energy\+Hits}
+\end{DoxyParamCaption}
+)}\label{classUMEventAction_a81e4b6ebea6a9c34692964c08bd1a7c8}
+
+
+Constructor. 
+
+\hypertarget{classUMEventAction_a503b6634cb64db87aea320d1c8810692}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!````~U\+M\+Event\+Action@{$\sim$\+U\+M\+Event\+Action}}
+\index{````~U\+M\+Event\+Action@{$\sim$\+U\+M\+Event\+Action}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{$\sim$\+U\+M\+Event\+Action()}]{\setlength{\rightskip}{0pt plus 5cm}U\+M\+Event\+Action\+::$\sim$\+U\+M\+Event\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classUMEventAction_a503b6634cb64db87aea320d1c8810692}
+
+
+Destructor. 
+
+pass 
+
+\subsection{Member Function Documentation}
+\hypertarget{classUMEventAction_af1288b6bdbdfbe40a9fafc13b84250db}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!Begin\+Of\+Event\+Action@{Begin\+Of\+Event\+Action}}
+\index{Begin\+Of\+Event\+Action@{Begin\+Of\+Event\+Action}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{Begin\+Of\+Event\+Action(const G4\+Event $\ast$an\+Event)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Event\+Action\+::\+Begin\+Of\+Event\+Action (
+\begin{DoxyParamCaption}
+\item[{const G4\+Event $\ast$}]{an\+Event}
+\end{DoxyParamCaption}
+)}\label{classUMEventAction_af1288b6bdbdfbe40a9fafc13b84250db}
+
+
+What happens at the beginning of Event? 
+
+At the begin of event setup the S\+D Manager and the hits Collection. \hypertarget{classUMEventAction_ab31f064263770cd6f2daeca58ac160ee}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!End\+Of\+Event\+Action@{End\+Of\+Event\+Action}}
+\index{End\+Of\+Event\+Action@{End\+Of\+Event\+Action}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{End\+Of\+Event\+Action(const G4\+Event $\ast$an\+Event)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Event\+Action\+::\+End\+Of\+Event\+Action (
+\begin{DoxyParamCaption}
+\item[{const G4\+Event $\ast$}]{an\+Event}
+\end{DoxyParamCaption}
+)}\label{classUMEventAction_ab31f064263770cd6f2daeca58ac160ee}
+
+
+What happens at the end of an Event? 
+
+At the end of the event... loop over hits
+
+Get the information from the hit
+
+\begin{DoxyAttention}{Attention}
+\{should be given in mm !!!\}
+\end{DoxyAttention}
+uncomment below to write non-\/serialised file line
+
+to save up some storage save only if energy deposited within the drift gas volumn and if the energy is larger than 26e\+V = ionisation of Argon
+
+\begin{DoxyAttention}{Attention}
+\{position in um, energy in ke\+V\} 
+\end{DoxyAttention}
+\hypertarget{classUMEventAction_a8748655e8f5afe57a0c7ed6e83038ee0}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!Get\+Sensitive\+Detector@{Get\+Sensitive\+Detector}}
+\index{Get\+Sensitive\+Detector@{Get\+Sensitive\+Detector}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{Get\+Sensitive\+Detector(\+G4\+String detname)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+M\+S\+D} $\ast$ U\+M\+Event\+Action\+::\+Get\+Sensitive\+Detector (
+\begin{DoxyParamCaption}
+\item[{G4\+String}]{detname}
+\end{DoxyParamCaption}
+)}\label{classUMEventAction_a8748655e8f5afe57a0c7ed6e83038ee0}
+
+
+Get the sensitive detector. 
+
+Get the Sensitive Detector. \hypertarget{classUMEventAction_a5f4b755e2e7b9c61ed355b6e21dd93e0}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!Set\+Root\+Saver@{Set\+Root\+Saver}}
+\index{Set\+Root\+Saver@{Set\+Root\+Saver}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{Set\+Root\+Saver(\+U\+M\+Root\+Saver $\ast$saver)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Event\+Action\+::\+Set\+Root\+Saver (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+M\+Root\+Saver} $\ast$}]{saver}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMEventAction_a5f4b755e2e7b9c61ed355b6e21dd93e0}
+
+
+Set up the R\+O\+O\+T saver. 
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classUMEventAction_a55440e417cd0da1c627acb845a1108b9}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!Depos\+Count@{Depos\+Count}}
+\index{Depos\+Count@{Depos\+Count}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{Depos\+Count}]{\setlength{\rightskip}{0pt plus 5cm}G4int U\+M\+Event\+Action\+::\+Depos\+Count\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a55440e417cd0da1c627acb845a1108b9}
+\hypertarget{classUMEventAction_a08ad731762fc90f81d56438383ee7bd8}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!E\+Dep@{E\+Dep}}
+\index{E\+Dep@{E\+Dep}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{E\+Dep}]{\setlength{\rightskip}{0pt plus 5cm}G4double U\+M\+Event\+Action\+::\+E\+Dep\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a08ad731762fc90f81d56438383ee7bd8}
+\hypertarget{classUMEventAction_a0a8010739f4395ee799c2b7a106263b2}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!fenergy\+Hits@{fenergy\+Hits}}
+\index{fenergy\+Hits@{fenergy\+Hits}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{fenergy\+Hits}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ofstream\& U\+M\+Event\+Action\+::fenergy\+Hits\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a0a8010739f4395ee799c2b7a106263b2}
+\hypertarget{classUMEventAction_a9bbd91659dd5720ff846cb231f8b8a81}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!ftotal\+Hits@{ftotal\+Hits}}
+\index{ftotal\+Hits@{ftotal\+Hits}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{ftotal\+Hits}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ofstream\& U\+M\+Event\+Action\+::ftotal\+Hits\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a9bbd91659dd5720ff846cb231f8b8a81}
+\hypertarget{classUMEventAction_a93249ca25c9565def0692d174a3e535e}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!hits\+Coll\+I\+D@{hits\+Coll\+I\+D}}
+\index{hits\+Coll\+I\+D@{hits\+Coll\+I\+D}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{hits\+Coll\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}G4int U\+M\+Event\+Action\+::hits\+Coll\+I\+D\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a93249ca25c9565def0692d174a3e535e}
+\hypertarget{classUMEventAction_a42d549a67c09ac22be18a0724b3f35ad}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!mum@{mum}}
+\index{mum@{mum}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{mum}]{\setlength{\rightskip}{0pt plus 5cm}G4int U\+M\+Event\+Action\+::mum\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a42d549a67c09ac22be18a0724b3f35ad}
+\hypertarget{classUMEventAction_a3bf2d2815501186c39a1985f47b2f5ab}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!particle@{particle}}
+\index{particle@{particle}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{particle}]{\setlength{\rightskip}{0pt plus 5cm}G4\+String U\+M\+Event\+Action\+::particle\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a3bf2d2815501186c39a1985f47b2f5ab}
+\hypertarget{classUMEventAction_a70cb8cc9f3d9820a85aedf4d245f5435}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!part\+Pdg\+Id@{part\+Pdg\+Id}}
+\index{part\+Pdg\+Id@{part\+Pdg\+Id}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{part\+Pdg\+Id}]{\setlength{\rightskip}{0pt plus 5cm}G4int U\+M\+Event\+Action\+::part\+Pdg\+Id\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a70cb8cc9f3d9820a85aedf4d245f5435}
+\hypertarget{classUMEventAction_aca4a227170c74e840a4ff2748efc20a2}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!position@{position}}
+\index{position@{position}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}G4\+Three\+Vector U\+M\+Event\+Action\+::position\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_aca4a227170c74e840a4ff2748efc20a2}
+\hypertarget{classUMEventAction_a2eabd29838c45226cc745aaeaee2a957}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!process@{process}}
+\index{process@{process}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{process}]{\setlength{\rightskip}{0pt plus 5cm}G4\+String U\+M\+Event\+Action\+::process\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a2eabd29838c45226cc745aaeaee2a957}
+\hypertarget{classUMEventAction_a1ad55dd713ab67a94b7989e09a7d19a9}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!R\+Saver@{R\+Saver}}
+\index{R\+Saver@{R\+Saver}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{R\+Saver}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+M\+Root\+Saver}$\ast$ U\+M\+Event\+Action\+::\+R\+Saver\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a1ad55dd713ab67a94b7989e09a7d19a9}
+\hypertarget{classUMEventAction_a5a3fe12d0cc54f760499e76675044531}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!Total\+E\+Dep@{Total\+E\+Dep}}
+\index{Total\+E\+Dep@{Total\+E\+Dep}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{Total\+E\+Dep}]{\setlength{\rightskip}{0pt plus 5cm}G4double U\+M\+Event\+Action\+::\+Total\+E\+Dep\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a5a3fe12d0cc54f760499e76675044531}
+\hypertarget{classUMEventAction_a006e73f519211d125c5f2ac070fbf489}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!xpos@{xpos}}
+\index{xpos@{xpos}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{xpos}]{\setlength{\rightskip}{0pt plus 5cm}G4double U\+M\+Event\+Action\+::xpos\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a006e73f519211d125c5f2ac070fbf489}
+\hypertarget{classUMEventAction_a06f954b93a1ec5dc1e74dbd0f08fa258}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!ypos@{ypos}}
+\index{ypos@{ypos}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{ypos}]{\setlength{\rightskip}{0pt plus 5cm}G4double U\+M\+Event\+Action\+::ypos\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a06f954b93a1ec5dc1e74dbd0f08fa258}
+\hypertarget{classUMEventAction_a6a8137a0ba95725f0bcd80f9a433dcb0}{}\index{U\+M\+Event\+Action@{U\+M\+Event\+Action}!zpos@{zpos}}
+\index{zpos@{zpos}!U\+M\+Event\+Action@{U\+M\+Event\+Action}}
+\subsubsection[{zpos}]{\setlength{\rightskip}{0pt plus 5cm}G4double U\+M\+Event\+Action\+::zpos\hspace{0.3cm}{\ttfamily [private]}}\label{classUMEventAction_a6a8137a0ba95725f0bcd80f9a433dcb0}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{UMEventAction_8hh}{U\+M\+Event\+Action.\+hh}\item 
+src/\hyperlink{UMEventAction_8cc}{U\+M\+Event\+Action.\+cc}\end{DoxyCompactItemize}

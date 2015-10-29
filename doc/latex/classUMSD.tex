@@ -1,0 +1,160 @@
+\hypertarget{classUMSD}{}\section{U\+M\+S\+D Class Reference}
+\label{classUMSD}\index{U\+M\+S\+D@{U\+M\+S\+D}}
+
+
+{\ttfamily \#include $<$U\+M\+S\+D.\+hh$>$}
+
+
+
+Inheritance diagram for U\+M\+S\+D\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classUMSD__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\+M\+S\+D\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classUMSD__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUMSD_aba31b29e6b53618650ac627f49e813f8}{U\+M\+S\+D} (G4\+String S\+Dname)
+\item 
+\hyperlink{classUMSD_a8e9150046d7e00c3179d30c27fb01e26}{$\sim$\+U\+M\+S\+D} ()
+\item 
+G4bool \hyperlink{classUMSD_afdcb8b2b14fa1e9c22f82d305381849a}{Process\+Hits} (G4\+Step $\ast$step, G4\+Touchable\+History $\ast$R\+Ohist)
+\begin{DoxyCompactList}\small\item\em Mandatory class. \end{DoxyCompactList}\item 
+void \hyperlink{classUMSD_a15c7a91080ef37306aadec1def3e5acd}{Initialize} (G4\+H\+Cof\+This\+Event $\ast$H\+C\+E)
+\item 
+void \hyperlink{classUMSD_a62353fbde18e0b32cc1d8ea455c278af}{End\+Of\+Event} (G4\+H\+Cof\+This\+Event $\ast$H\+C\+E)
+\begin{DoxyCompactList}\small\item\em defines what happens at the end of each event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ G4int, \hyperlink{classUMHit}{U\+M\+Hit} $\ast$ $>$ \hyperlink{classUMSD_a6da3356d9e0e0512f26ac3c11cdbb6d8}{hit\+Map\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUMSD_a6da3356d9e0e0512f26ac3c11cdbb6d8}{hit\+Map\+\_\+t} \hyperlink{classUMSD_acc453bf46c439aec3d5c82715152fab4}{hit\+Map}
+\begin{DoxyCompactList}\small\item\em Helper mapping layer number with hit. \end{DoxyCompactList}\item 
+\hyperlink{UMHit_8hh_ae4ae3db383f3d522b08825b4ecbfc3e6}{U\+M\+Hits\+Collection} $\ast$ \hyperlink{classUMSD_a6b2f2c42a6be884619371760d8b8752d}{hits\+Collection}
+\item 
+G4int \hyperlink{classUMSD_a639c42664519bddf251bd758ebc09635}{H\+C\+I\+D}
+\begin{DoxyCompactList}\small\item\em Collection of hits in the gas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the S\+D of the detector construction stores the hits in the Hit Collection of this Event. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classUMSD_a6da3356d9e0e0512f26ac3c11cdbb6d8}{}\index{U\+M\+S\+D@{U\+M\+S\+D}!hit\+Map\+\_\+t@{hit\+Map\+\_\+t}}
+\index{hit\+Map\+\_\+t@{hit\+Map\+\_\+t}!U\+M\+S\+D@{U\+M\+S\+D}}
+\subsubsection[{hit\+Map\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$G4int,{\bf U\+M\+Hit}$\ast$$>$ {\bf U\+M\+S\+D\+::hit\+Map\+\_\+t}\hspace{0.3cm}{\ttfamily [private]}}\label{classUMSD_a6da3356d9e0e0512f26ac3c11cdbb6d8}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classUMSD_aba31b29e6b53618650ac627f49e813f8}{}\index{U\+M\+S\+D@{U\+M\+S\+D}!U\+M\+S\+D@{U\+M\+S\+D}}
+\index{U\+M\+S\+D@{U\+M\+S\+D}!U\+M\+S\+D@{U\+M\+S\+D}}
+\subsubsection[{U\+M\+S\+D(\+G4\+String S\+Dname)}]{\setlength{\rightskip}{0pt plus 5cm}U\+M\+S\+D\+::\+U\+M\+S\+D (
+\begin{DoxyParamCaption}
+\item[{G4\+String}]{S\+Dname}
+\end{DoxyParamCaption}
+)}\label{classUMSD_aba31b29e6b53618650ac627f49e813f8}
+Source for the \begin{DoxySeeAlso}{See also}
+U\+M\+Sensitive\+Detector
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Nikolaos Karastathis $<$ nkarast .at. cern .dot. ch $>$ 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v2.\+0 
+\end{DoxyVersion}
+\{\textquotesingle{}collection\+Name\textquotesingle{} is a protected data member of base class G4\+V\+Sensitive\+Detector. Here we declare the name of the collection we will be using.\}
+
+\{Note that we may add as many collection names we would wish\+: ie \hypertarget{classUMSD_a8e9150046d7e00c3179d30c27fb01e26}{}\index{U\+M\+S\+D@{U\+M\+S\+D}!````~U\+M\+S\+D@{$\sim$\+U\+M\+S\+D}}
+\index{````~U\+M\+S\+D@{$\sim$\+U\+M\+S\+D}!U\+M\+S\+D@{U\+M\+S\+D}}
+\subsubsection[{$\sim$\+U\+M\+S\+D()}]{\setlength{\rightskip}{0pt plus 5cm}U\+M\+S\+D\+::$\sim$\+U\+M\+S\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMSD_a8e9150046d7e00c3179d30c27fb01e26}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classUMSD_a62353fbde18e0b32cc1d8ea455c278af}{}\index{U\+M\+S\+D@{U\+M\+S\+D}!End\+Of\+Event@{End\+Of\+Event}}
+\index{End\+Of\+Event@{End\+Of\+Event}!U\+M\+S\+D@{U\+M\+S\+D}}
+\subsubsection[{End\+Of\+Event(\+G4\+H\+Cof\+This\+Event $\ast$\+H\+C\+E)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+S\+D\+::\+End\+Of\+Event (
+\begin{DoxyParamCaption}
+\item[{G4\+H\+Cof\+This\+Event $\ast$}]{H\+C\+E}
+\end{DoxyParamCaption}
+)}\label{classUMSD_a62353fbde18e0b32cc1d8ea455c278af}
+
+
+defines what happens at the end of each event. 
+
+do nothing -\/
+
+\begin{DoxySeeAlso}{See also}
+End\+Of\+Event\+Action will take care of that 
+\end{DoxySeeAlso}
+\hypertarget{classUMSD_a15c7a91080ef37306aadec1def3e5acd}{}\index{U\+M\+S\+D@{U\+M\+S\+D}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!U\+M\+S\+D@{U\+M\+S\+D}}
+\subsubsection[{Initialize(\+G4\+H\+Cof\+This\+Event $\ast$\+H\+C\+E)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+S\+D\+::\+Initialize (
+\begin{DoxyParamCaption}
+\item[{G4\+H\+Cof\+This\+Event $\ast$}]{H\+C\+E}
+\end{DoxyParamCaption}
+)}\label{classUMSD_a15c7a91080ef37306aadec1def3e5acd}
+To insert the collection, we need to get an index for it. This index is unique to the collection. It is provided by the Get\+Collection\+I\+D(...) method (which calls what is needed in the kernel to get this index). \hypertarget{classUMSD_afdcb8b2b14fa1e9c22f82d305381849a}{}\index{U\+M\+S\+D@{U\+M\+S\+D}!Process\+Hits@{Process\+Hits}}
+\index{Process\+Hits@{Process\+Hits}!U\+M\+S\+D@{U\+M\+S\+D}}
+\subsubsection[{Process\+Hits(\+G4\+Step $\ast$step, G4\+Touchable\+History $\ast$\+R\+Ohist)}]{\setlength{\rightskip}{0pt plus 5cm}G4bool U\+M\+S\+D\+::\+Process\+Hits (
+\begin{DoxyParamCaption}
+\item[{G4\+Step $\ast$}]{step, }
+\item[{G4\+Touchable\+History $\ast$}]{R\+Ohist}
+\end{DoxyParamCaption}
+)}\label{classUMSD_afdcb8b2b14fa1e9c22f82d305381849a}
+
+
+Mandatory class. 
+
+Get the track for the step
+
+Generate the info for this track (position, energy, particle, etc)
+
+Generate a new \hyperlink{classUMHit}{U\+M\+Hit} and store the information
+
+then insert the hit into the Hits Collection 
+
+\subsection{Field Documentation}
+\hypertarget{classUMSD_a639c42664519bddf251bd758ebc09635}{}\index{U\+M\+S\+D@{U\+M\+S\+D}!H\+C\+I\+D@{H\+C\+I\+D}}
+\index{H\+C\+I\+D@{H\+C\+I\+D}!U\+M\+S\+D@{U\+M\+S\+D}}
+\subsubsection[{H\+C\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}G4int U\+M\+S\+D\+::\+H\+C\+I\+D\hspace{0.3cm}{\ttfamily [private]}}\label{classUMSD_a639c42664519bddf251bd758ebc09635}
+
+
+Collection of hits in the gas. 
+
+\hypertarget{classUMSD_acc453bf46c439aec3d5c82715152fab4}{}\index{U\+M\+S\+D@{U\+M\+S\+D}!hit\+Map@{hit\+Map}}
+\index{hit\+Map@{hit\+Map}!U\+M\+S\+D@{U\+M\+S\+D}}
+\subsubsection[{hit\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hit\+Map\+\_\+t} U\+M\+S\+D\+::hit\+Map\hspace{0.3cm}{\ttfamily [private]}}\label{classUMSD_acc453bf46c439aec3d5c82715152fab4}
+
+
+Helper mapping layer number with hit. 
+
+\hypertarget{classUMSD_a6b2f2c42a6be884619371760d8b8752d}{}\index{U\+M\+S\+D@{U\+M\+S\+D}!hits\+Collection@{hits\+Collection}}
+\index{hits\+Collection@{hits\+Collection}!U\+M\+S\+D@{U\+M\+S\+D}}
+\subsubsection[{hits\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+M\+Hits\+Collection}$\ast$ U\+M\+S\+D\+::hits\+Collection\hspace{0.3cm}{\ttfamily [private]}}\label{classUMSD_a6b2f2c42a6be884619371760d8b8752d}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{UMSD_8hh}{U\+M\+S\+D.\+hh}\item 
+src/\hyperlink{UMSD_8cc}{U\+M\+S\+D.\+cc}\end{DoxyCompactItemize}

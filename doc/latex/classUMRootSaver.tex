@@ -1,0 +1,243 @@
+\hypertarget{classUMRootSaver}{}\section{U\+M\+Root\+Saver Class Reference}
+\label{classUMRootSaver}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+
+
+{\ttfamily \#include $<$U\+M\+Root\+Saver.\+hh$>$}
+
+
+
+Collaboration diagram for U\+M\+Root\+Saver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classUMRootSaver__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUMRootSaver_a96154d44d69b9dc6e0aef05a9f39e7dc}{U\+M\+Root\+Saver} ()
+\begin{DoxyCompactList}\small\item\em \{The Class creates a R\+O\+O\+T saver object with two trees to be output\} \end{DoxyCompactList}\item 
+virtual \hyperlink{classUMRootSaver_a874c1e2de31c7bde041e5ab6310219ca}{$\sim$\+U\+M\+Root\+Saver} ()
+\item 
+virtual void \hyperlink{classUMRootSaver_a12b7c7cf3bba7c57b940b7c70566331c}{Create\+Tree} ()
+\item 
+virtual void \hyperlink{classUMRootSaver_a04707033a436e745215d082ae70c1c3d}{Close\+Tree} ()
+\item 
+virtual void \hyperlink{classUMRootSaver_a0574c48b931667d328005772a49f2f4e}{add\+Line} (G4int event, G4double energy, G4\+String particle\+Name, G4int pdgid, G4\+String process, G4double xpos, G4double ypos, G4double zpos)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\+File $\ast$ \hyperlink{classUMRootSaver_ad7ffe5037296689e41b7c161afa3cee3}{R\+File}
+\item 
+T\+Tree $\ast$ \hyperlink{classUMRootSaver_a29e193f625e575fdbbb87af833959260}{linetree}
+\item 
+T\+Tree $\ast$ \hyperlink{classUMRootSaver_a2480f54d6b0013cc940e00b242508747}{infotree}
+\item 
+unsigned int \hyperlink{classUMRootSaver_a99af4bcf69b6a924398e5f9f4c55dd0f}{run\+Counter}
+\item 
+int \hyperlink{classUMRootSaver_aa2a036666d57184757bf92a30fa92a01}{line\+\_\+event} = -\/1000
+\item 
+double \hyperlink{classUMRootSaver_ab4ce203238d77838c94d6e79c8da7627}{line\+\_\+total\+Energy} = 0
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classUMRootSaver_a3306ae5496af585da4cfcb7b814add17}{line\+\_\+energy}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classUMRootSaver_a238095e0ad1a8ffb1c8234dbd8498267}{line\+\_\+particle}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classUMRootSaver_a2a2b886dd46e2c58518a77d17c699ef4}{line\+\_\+pdgid}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classUMRootSaver_a7314b2dbee08811d7c0ffe8da8e6a139}{line\+\_\+process}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classUMRootSaver_a2050b402447a170697da61679df4083e}{line\+\_\+xpos}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classUMRootSaver_a987f396719a5013af8b6e8ef181ff102}{line\+\_\+ypos}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classUMRootSaver_a614b0676af3c14b3539d39dae29ae32e}{line\+\_\+zpos}
+\item 
+double \hyperlink{classUMRootSaver_add592e7355abbae18ec766a482fcf051}{line\+\_\+above\+\_\+resistive} = 1117.\+0
+\item 
+double \hyperlink{classUMRootSaver_a3eaefa9c88dfb35ad31f9cbe696deb5d}{line\+\_\+below\+\_\+mesh} = 1216.\+0
+\item 
+double \hyperlink{classUMRootSaver_ae741b38eda489eefddb6bed3295bf857}{line\+\_\+above\+\_\+mesh} = 1240.\+0
+\item 
+double \hyperlink{classUMRootSaver_a42a91f0a2e68665dfaa4a084c8b73b4a}{line\+\_\+below\+\_\+drift} = 6216.\+0
+\item 
+double \hyperlink{classUMRootSaver_a49acbd1dd22d72f9d00c2f262cdc8a2c}{line\+\_\+positivey} = 50000.
+\item 
+double \hyperlink{classUMRootSaver_a1fa4a2ba095c5dcc794de33f25a42e35}{line\+\_\+negativey} = -\/50000.
+\item 
+double \hyperlink{classUMRootSaver_a7439f5ed17b1b5d0fac167973db37487}{line\+\_\+positivez} = 50000.
+\item 
+double \hyperlink{classUMRootSaver_a41e77a03fea64cc18102920f18450979}{line\+\_\+negativez} = -\/50000.
+\item 
+double \hyperlink{classUMRootSaver_aedc64ce54759ccba3b139b4a1aa3f695}{line\+\_\+positivex} = 23000.
+\item 
+double \hyperlink{classUMRootSaver_a7792131c2371da76bc184cdd5280213f}{line\+\_\+beam\+\_\+energy} = 0
+\item 
+double \hyperlink{classUMRootSaver_a4ae1aa5a692e420f7f3180ac34fa2567}{line\+\_\+beam\+\_\+start\+X} = 0
+\item 
+double \hyperlink{classUMRootSaver_a861a274f7f49bfa59cdbf41f9ea2acc2}{line\+\_\+beam\+\_\+start\+Y} = 0
+\item 
+double \hyperlink{classUMRootSaver_acd5167ed144e077742582dd8720fb03e}{line\+\_\+beam\+\_\+start\+Z} = 0
+\item 
+double \hyperlink{classUMRootSaver_a1b94f0a9b4a5ba2c1a640e22e37ec07a}{line\+\_\+\+Argon\+\_\+percent} = 0
+\item 
+double \hyperlink{classUMRootSaver_a9250e9ecd6587858b397a35bb55a7889}{line\+\_\+\+C\+O2\+\_\+percent} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classUMRootSaver_a96154d44d69b9dc6e0aef05a9f39e7dc}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{U\+M\+Root\+Saver()}]{\setlength{\rightskip}{0pt plus 5cm}U\+M\+Root\+Saver\+::\+U\+M\+Root\+Saver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classUMRootSaver_a96154d44d69b9dc6e0aef05a9f39e7dc}
+
+
+\{The Class creates a R\+O\+O\+T saver object with two trees to be output\} 
+
+\hypertarget{classUMRootSaver_a874c1e2de31c7bde041e5ab6310219ca}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!````~U\+M\+Root\+Saver@{$\sim$\+U\+M\+Root\+Saver}}
+\index{````~U\+M\+Root\+Saver@{$\sim$\+U\+M\+Root\+Saver}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{$\sim$\+U\+M\+Root\+Saver()}]{\setlength{\rightskip}{0pt plus 5cm}U\+M\+Root\+Saver\+::$\sim$\+U\+M\+Root\+Saver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classUMRootSaver_a874c1e2de31c7bde041e5ab6310219ca}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classUMRootSaver_a0574c48b931667d328005772a49f2f4e}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!add\+Line@{add\+Line}}
+\index{add\+Line@{add\+Line}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{add\+Line(\+G4int event, G4double energy, G4\+String particle\+Name, G4int pdgid, G4\+String process, G4double xpos, G4double ypos, G4double zpos)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Root\+Saver\+::add\+Line (
+\begin{DoxyParamCaption}
+\item[{G4int}]{event, }
+\item[{G4double}]{energy, }
+\item[{G4\+String}]{particle\+Name, }
+\item[{G4int}]{pdgid, }
+\item[{G4\+String}]{process, }
+\item[{G4double}]{xpos, }
+\item[{G4double}]{ypos, }
+\item[{G4double}]{zpos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classUMRootSaver_a0574c48b931667d328005772a49f2f4e}
+Imagine that you\textquotesingle{}re writing to a plain txt file... Call this function whenever you want to add a line I\textquotesingle{}ll handle the  ;)
+
+Here is where all the R\+O\+O\+T magic happens \hypertarget{classUMRootSaver_a04707033a436e745215d082ae70c1c3d}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!Close\+Tree@{Close\+Tree}}
+\index{Close\+Tree@{Close\+Tree}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{Close\+Tree()}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Root\+Saver\+::\+Close\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classUMRootSaver_a04707033a436e745215d082ae70c1c3d}
+this is for the last event to be written, since we add one line per {\ttfamily add\+Line} call \hypertarget{classUMRootSaver_a12b7c7cf3bba7c57b940b7c70566331c}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!Create\+Tree@{Create\+Tree}}
+\index{Create\+Tree@{Create\+Tree}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{Create\+Tree()}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Root\+Saver\+::\+Create\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classUMRootSaver_a12b7c7cf3bba7c57b940b7c70566331c}
+name this output to handle for multiple job submission
+
+useless...
+
+Load the configuration
+
+set some global run info to the Run
+
+Create the two trees and their branches
+
+\subsection{Field Documentation}
+\hypertarget{classUMRootSaver_a2480f54d6b0013cc940e00b242508747}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!infotree@{infotree}}
+\index{infotree@{infotree}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{infotree}]{\setlength{\rightskip}{0pt plus 5cm}T\+Tree$\ast$ U\+M\+Root\+Saver\+::infotree\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a2480f54d6b0013cc940e00b242508747}
+\hypertarget{classUMRootSaver_ae741b38eda489eefddb6bed3295bf857}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+above\+\_\+mesh@{line\+\_\+above\+\_\+mesh}}
+\index{line\+\_\+above\+\_\+mesh@{line\+\_\+above\+\_\+mesh}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+above\+\_\+mesh}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+above\+\_\+mesh = 1240.\+0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_ae741b38eda489eefddb6bed3295bf857}
+\hypertarget{classUMRootSaver_add592e7355abbae18ec766a482fcf051}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+above\+\_\+resistive@{line\+\_\+above\+\_\+resistive}}
+\index{line\+\_\+above\+\_\+resistive@{line\+\_\+above\+\_\+resistive}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+above\+\_\+resistive}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+above\+\_\+resistive = 1117.\+0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_add592e7355abbae18ec766a482fcf051}
+\hypertarget{classUMRootSaver_a1b94f0a9b4a5ba2c1a640e22e37ec07a}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+\+Argon\+\_\+percent@{line\+\_\+\+Argon\+\_\+percent}}
+\index{line\+\_\+\+Argon\+\_\+percent@{line\+\_\+\+Argon\+\_\+percent}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+\+Argon\+\_\+percent}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+\+Argon\+\_\+percent = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a1b94f0a9b4a5ba2c1a640e22e37ec07a}
+\hypertarget{classUMRootSaver_a7792131c2371da76bc184cdd5280213f}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+beam\+\_\+energy@{line\+\_\+beam\+\_\+energy}}
+\index{line\+\_\+beam\+\_\+energy@{line\+\_\+beam\+\_\+energy}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+beam\+\_\+energy}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+beam\+\_\+energy = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a7792131c2371da76bc184cdd5280213f}
+\hypertarget{classUMRootSaver_a4ae1aa5a692e420f7f3180ac34fa2567}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+beam\+\_\+start\+X@{line\+\_\+beam\+\_\+start\+X}}
+\index{line\+\_\+beam\+\_\+start\+X@{line\+\_\+beam\+\_\+start\+X}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+beam\+\_\+start\+X}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+beam\+\_\+start\+X = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a4ae1aa5a692e420f7f3180ac34fa2567}
+\hypertarget{classUMRootSaver_a861a274f7f49bfa59cdbf41f9ea2acc2}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+beam\+\_\+start\+Y@{line\+\_\+beam\+\_\+start\+Y}}
+\index{line\+\_\+beam\+\_\+start\+Y@{line\+\_\+beam\+\_\+start\+Y}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+beam\+\_\+start\+Y}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+beam\+\_\+start\+Y = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a861a274f7f49bfa59cdbf41f9ea2acc2}
+\hypertarget{classUMRootSaver_acd5167ed144e077742582dd8720fb03e}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+beam\+\_\+start\+Z@{line\+\_\+beam\+\_\+start\+Z}}
+\index{line\+\_\+beam\+\_\+start\+Z@{line\+\_\+beam\+\_\+start\+Z}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+beam\+\_\+start\+Z}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+beam\+\_\+start\+Z = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_acd5167ed144e077742582dd8720fb03e}
+\hypertarget{classUMRootSaver_a42a91f0a2e68665dfaa4a084c8b73b4a}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+below\+\_\+drift@{line\+\_\+below\+\_\+drift}}
+\index{line\+\_\+below\+\_\+drift@{line\+\_\+below\+\_\+drift}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+below\+\_\+drift}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+below\+\_\+drift = 6216.\+0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a42a91f0a2e68665dfaa4a084c8b73b4a}
+\hypertarget{classUMRootSaver_a3eaefa9c88dfb35ad31f9cbe696deb5d}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+below\+\_\+mesh@{line\+\_\+below\+\_\+mesh}}
+\index{line\+\_\+below\+\_\+mesh@{line\+\_\+below\+\_\+mesh}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+below\+\_\+mesh}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+below\+\_\+mesh = 1216.\+0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a3eaefa9c88dfb35ad31f9cbe696deb5d}
+\hypertarget{classUMRootSaver_a9250e9ecd6587858b397a35bb55a7889}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+\+C\+O2\+\_\+percent@{line\+\_\+\+C\+O2\+\_\+percent}}
+\index{line\+\_\+\+C\+O2\+\_\+percent@{line\+\_\+\+C\+O2\+\_\+percent}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+\+C\+O2\+\_\+percent}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+\+C\+O2\+\_\+percent = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a9250e9ecd6587858b397a35bb55a7889}
+\hypertarget{classUMRootSaver_a3306ae5496af585da4cfcb7b814add17}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+energy@{line\+\_\+energy}}
+\index{line\+\_\+energy@{line\+\_\+energy}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+energy}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ U\+M\+Root\+Saver\+::line\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a3306ae5496af585da4cfcb7b814add17}
+\hypertarget{classUMRootSaver_aa2a036666d57184757bf92a30fa92a01}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+event@{line\+\_\+event}}
+\index{line\+\_\+event@{line\+\_\+event}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+event}]{\setlength{\rightskip}{0pt plus 5cm}int U\+M\+Root\+Saver\+::line\+\_\+event = -\/1000\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_aa2a036666d57184757bf92a30fa92a01}
+Some initialization is required \hypertarget{classUMRootSaver_a1fa4a2ba095c5dcc794de33f25a42e35}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+negativey@{line\+\_\+negativey}}
+\index{line\+\_\+negativey@{line\+\_\+negativey}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+negativey}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+negativey = -\/50000.\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a1fa4a2ba095c5dcc794de33f25a42e35}
+\hypertarget{classUMRootSaver_a41e77a03fea64cc18102920f18450979}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+negativez@{line\+\_\+negativez}}
+\index{line\+\_\+negativez@{line\+\_\+negativez}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+negativez}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+negativez = -\/50000.\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a41e77a03fea64cc18102920f18450979}
+\hypertarget{classUMRootSaver_a238095e0ad1a8ffb1c8234dbd8498267}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+particle@{line\+\_\+particle}}
+\index{line\+\_\+particle@{line\+\_\+particle}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+particle}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ U\+M\+Root\+Saver\+::line\+\_\+particle\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a238095e0ad1a8ffb1c8234dbd8498267}
+\hypertarget{classUMRootSaver_a2a2b886dd46e2c58518a77d17c699ef4}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+pdgid@{line\+\_\+pdgid}}
+\index{line\+\_\+pdgid@{line\+\_\+pdgid}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+pdgid}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ U\+M\+Root\+Saver\+::line\+\_\+pdgid\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a2a2b886dd46e2c58518a77d17c699ef4}
+\hypertarget{classUMRootSaver_aedc64ce54759ccba3b139b4a1aa3f695}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+positivex@{line\+\_\+positivex}}
+\index{line\+\_\+positivex@{line\+\_\+positivex}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+positivex}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+positivex = 23000.\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_aedc64ce54759ccba3b139b4a1aa3f695}
+\hypertarget{classUMRootSaver_a49acbd1dd22d72f9d00c2f262cdc8a2c}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+positivey@{line\+\_\+positivey}}
+\index{line\+\_\+positivey@{line\+\_\+positivey}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+positivey}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+positivey = 50000.\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a49acbd1dd22d72f9d00c2f262cdc8a2c}
+\hypertarget{classUMRootSaver_a7439f5ed17b1b5d0fac167973db37487}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+positivez@{line\+\_\+positivez}}
+\index{line\+\_\+positivez@{line\+\_\+positivez}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+positivez}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+positivez = 50000.\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a7439f5ed17b1b5d0fac167973db37487}
+\hypertarget{classUMRootSaver_a7314b2dbee08811d7c0ffe8da8e6a139}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+process@{line\+\_\+process}}
+\index{line\+\_\+process@{line\+\_\+process}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+process}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ U\+M\+Root\+Saver\+::line\+\_\+process\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a7314b2dbee08811d7c0ffe8da8e6a139}
+\hypertarget{classUMRootSaver_ab4ce203238d77838c94d6e79c8da7627}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+total\+Energy@{line\+\_\+total\+Energy}}
+\index{line\+\_\+total\+Energy@{line\+\_\+total\+Energy}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+total\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}double U\+M\+Root\+Saver\+::line\+\_\+total\+Energy = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_ab4ce203238d77838c94d6e79c8da7627}
+\hypertarget{classUMRootSaver_a2050b402447a170697da61679df4083e}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+xpos@{line\+\_\+xpos}}
+\index{line\+\_\+xpos@{line\+\_\+xpos}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+xpos}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ U\+M\+Root\+Saver\+::line\+\_\+xpos\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a2050b402447a170697da61679df4083e}
+\hypertarget{classUMRootSaver_a987f396719a5013af8b6e8ef181ff102}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+ypos@{line\+\_\+ypos}}
+\index{line\+\_\+ypos@{line\+\_\+ypos}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+ypos}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ U\+M\+Root\+Saver\+::line\+\_\+ypos\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a987f396719a5013af8b6e8ef181ff102}
+\hypertarget{classUMRootSaver_a614b0676af3c14b3539d39dae29ae32e}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!line\+\_\+zpos@{line\+\_\+zpos}}
+\index{line\+\_\+zpos@{line\+\_\+zpos}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{line\+\_\+zpos}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ U\+M\+Root\+Saver\+::line\+\_\+zpos\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a614b0676af3c14b3539d39dae29ae32e}
+\hypertarget{classUMRootSaver_a29e193f625e575fdbbb87af833959260}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!linetree@{linetree}}
+\index{linetree@{linetree}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{linetree}]{\setlength{\rightskip}{0pt plus 5cm}T\+Tree$\ast$ U\+M\+Root\+Saver\+::linetree\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a29e193f625e575fdbbb87af833959260}
+\hypertarget{classUMRootSaver_ad7ffe5037296689e41b7c161afa3cee3}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!R\+File@{R\+File}}
+\index{R\+File@{R\+File}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{R\+File}]{\setlength{\rightskip}{0pt plus 5cm}T\+File$\ast$ U\+M\+Root\+Saver\+::\+R\+File\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_ad7ffe5037296689e41b7c161afa3cee3}
+\hypertarget{classUMRootSaver_a99af4bcf69b6a924398e5f9f4c55dd0f}{}\index{U\+M\+Root\+Saver@{U\+M\+Root\+Saver}!run\+Counter@{run\+Counter}}
+\index{run\+Counter@{run\+Counter}!U\+M\+Root\+Saver@{U\+M\+Root\+Saver}}
+\subsubsection[{run\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int U\+M\+Root\+Saver\+::run\+Counter\hspace{0.3cm}{\ttfamily [private]}}\label{classUMRootSaver_a99af4bcf69b6a924398e5f9f4c55dd0f}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{UMRootSaver_8hh}{U\+M\+Root\+Saver.\+hh}\item 
+src/\hyperlink{UMRootSaver_8cc}{U\+M\+Root\+Saver.\+cc}\end{DoxyCompactItemize}

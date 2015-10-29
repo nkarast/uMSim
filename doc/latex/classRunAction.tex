@@ -1,0 +1,147 @@
+\hypertarget{classRunAction}{}\section{Run\+Action Class Reference}
+\label{classRunAction}\index{Run\+Action@{Run\+Action}}
+
+
+The user-\/defined Run action class At the.  
+
+
+
+
+{\ttfamily \#include $<$Run\+Action.\+hh$>$}
+
+
+
+Inheritance diagram for Run\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classRunAction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Run\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classRunAction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRunAction_aa78ccbe310c2ff7d480d4242c2751e64}{Run\+Action} (\hyperlink{classUMEventAction}{U\+M\+Event\+Action} $\ast$ev\+Act)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classRunAction_a58216a98ab75d4c0d6fd8b07e2d7d710}{$\sim$\+Run\+Action} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classRunAction_a14b3433a6875194c4adfe1c222884f0d}{Begin\+Of\+Run\+Action} (const G4\+Run $\ast$)
+\begin{DoxyCompactList}\small\item\em At the beggining of each Run execute these statements. \end{DoxyCompactList}\item 
+void \hyperlink{classRunAction_a49e3c5db63358317c3babca100163bd9}{End\+Of\+Run\+Action} (const G4\+Run $\ast$)
+\begin{DoxyCompactList}\small\item\em When the Run ends execute these statements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUMRootSaver}{U\+M\+Root\+Saver} \hyperlink{classRunAction_a6628a3f063d474237f3aa7167fff359e}{R\+Saver}
+\begin{DoxyCompactList}\small\item\em Link the run with the. \end{DoxyCompactList}\item 
+\hyperlink{classUMEventAction}{U\+M\+Event\+Action} $\ast$ \hyperlink{classRunAction_aa9cd1a37c94536b68ef616ea87dd48f7}{um\+Event\+Action}
+\begin{DoxyCompactList}\small\item\em Link to the to the. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The user-\/defined Run action class At the. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classRunAction_a14b3433a6875194c4adfe1c222884f0d}{Begin\+Of\+Run\+Action} a Root\+Saver object is created to store the information 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRunAction_aa78ccbe310c2ff7d480d4242c2751e64}{}\index{Run\+Action@{Run\+Action}!Run\+Action@{Run\+Action}}
+\index{Run\+Action@{Run\+Action}!Run\+Action@{Run\+Action}}
+\subsubsection[{Run\+Action(\+U\+M\+Event\+Action $\ast$ev\+Act)}]{\setlength{\rightskip}{0pt plus 5cm}Run\+Action\+::\+Run\+Action (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+M\+Event\+Action} $\ast$}]{the\+Event\+Action}
+\end{DoxyParamCaption}
+)}\label{classRunAction_aa78ccbe310c2ff7d480d4242c2751e64}
+
+
+Constructor. 
+
+Source for \begin{DoxySeeAlso}{See also}
+\hyperlink{classRunAction}{Run\+Action}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Nikolaos Karastathis $<$ nkarast .at. cern .dot. ch $>$ 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v2.\+0 
+\end{DoxyVersion}
+Create an instance of Root\+Saver \hypertarget{classRunAction_a58216a98ab75d4c0d6fd8b07e2d7d710}{}\index{Run\+Action@{Run\+Action}!````~Run\+Action@{$\sim$\+Run\+Action}}
+\index{````~Run\+Action@{$\sim$\+Run\+Action}!Run\+Action@{Run\+Action}}
+\subsubsection[{$\sim$\+Run\+Action()}]{\setlength{\rightskip}{0pt plus 5cm}virtual Run\+Action\+::$\sim$\+Run\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classRunAction_a58216a98ab75d4c0d6fd8b07e2d7d710}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRunAction_a14b3433a6875194c4adfe1c222884f0d}{}\index{Run\+Action@{Run\+Action}!Begin\+Of\+Run\+Action@{Begin\+Of\+Run\+Action}}
+\index{Begin\+Of\+Run\+Action@{Begin\+Of\+Run\+Action}!Run\+Action@{Run\+Action}}
+\subsubsection[{Begin\+Of\+Run\+Action(const G4\+Run $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Run\+Action\+::\+Begin\+Of\+Run\+Action (
+\begin{DoxyParamCaption}
+\item[{const G4\+Run $\ast$}]{a\+Run}
+\end{DoxyParamCaption}
+)}\label{classRunAction_a14b3433a6875194c4adfe1c222884f0d}
+
+
+At the beggining of each Run execute these statements. 
+
+At the start of the Run create the R\+O\+O\+T trees. For each run a new T\+Tree is created, with default names \hypertarget{classRunAction_a49e3c5db63358317c3babca100163bd9}{}\index{Run\+Action@{Run\+Action}!End\+Of\+Run\+Action@{End\+Of\+Run\+Action}}
+\index{End\+Of\+Run\+Action@{End\+Of\+Run\+Action}!Run\+Action@{Run\+Action}}
+\subsubsection[{End\+Of\+Run\+Action(const G4\+Run $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}void Run\+Action\+::\+End\+Of\+Run\+Action (
+\begin{DoxyParamCaption}
+\item[{const G4\+Run $\ast$}]{a\+Run}
+\end{DoxyParamCaption}
+)}\label{classRunAction_a49e3c5db63358317c3babca100163bd9}
+
+
+When the Run ends execute these statements. 
+
+at the end of a run print out some info 
+
+\subsection{Field Documentation}
+\hypertarget{classRunAction_a6628a3f063d474237f3aa7167fff359e}{}\index{Run\+Action@{Run\+Action}!R\+Saver@{R\+Saver}}
+\index{R\+Saver@{R\+Saver}!Run\+Action@{Run\+Action}}
+\subsubsection[{R\+Saver}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+M\+Root\+Saver} Run\+Action\+::\+R\+Saver\hspace{0.3cm}{\ttfamily [private]}}\label{classRunAction_a6628a3f063d474237f3aa7167fff359e}
+
+
+Link the run with the. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classUMRootSaver}{U\+M\+Root\+Saver} object (
+
+\hyperlink{classRunAction_a6628a3f063d474237f3aa7167fff359e}{R\+Saver}) 
+\end{DoxySeeAlso}
+\hypertarget{classRunAction_aa9cd1a37c94536b68ef616ea87dd48f7}{}\index{Run\+Action@{Run\+Action}!um\+Event\+Action@{um\+Event\+Action}}
+\index{um\+Event\+Action@{um\+Event\+Action}!Run\+Action@{Run\+Action}}
+\subsubsection[{um\+Event\+Action}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+M\+Event\+Action}$\ast$ Run\+Action\+::um\+Event\+Action\hspace{0.3cm}{\ttfamily [private]}}\label{classRunAction_aa9cd1a37c94536b68ef616ea87dd48f7}
+
+
+Link to the to the. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classUMEventAction}{U\+M\+Event\+Action} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{RunAction_8hh}{Run\+Action.\+hh}\item 
+src/\hyperlink{RunAction_8cc}{Run\+Action.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+#ifndef UMDetectorConstruction_h
+#define UMDetectorConstruction_h 1
+
+#include "G4VUserDetectorConstruction.hh"
+#include "G4Material.hh"
+
+#include "G4SDManager.hh"
+#include "G4VSensitiveDetector.hh"
+#include "UMSD.hh"
+
+//~ #include "G4UniformElectricField.hh"
+//~ #include "G4TransportationManager.hh"
+class G4Box;
+class G4LogicalVolume;
+class G4VPhysicalVolume;
+class G4Material;
+class G4Element;
+class UMDetectorConstruction : public G4VUserDetectorConstruction
+{		
+	public:
+		UMDetectorConstruction();
+		~UMDetectorConstruction();
+
+	public:
+		G4VPhysicalVolume* Construct();
+		    //~ G4ElectricField*        fEMfield;
+		//~ G4FieldManager*         fFieldMgr;
+    G4double calculateDensity(G4double molWeightA, G4double perCentA, G4double molWeightB, G4double perCentB);
+
+	private:
+    
+		void DefineMaterials();
+		G4Material *Al,  *Fe, *Cu,  *Na, *Ca, *Si, *Mg, *C, *Zn;
+		G4Material *Na2O, *CaO, *MgO, *Al2O3, *Cl, *Epoxy, *SiO2, *Mylar, *CO2, *ArCO2, *ResStripMat,
+				*ArgonGas, *N2, *Air, *O2, *G10, *DryAir, *water, *H2, *Kapton, *StainlessSteel, *Brass;
+		G4VPhysicalVolume* ConstructDetector();
+
+	
+	
+		//physical volumes (ExN01)	
+		//~ G4Box*             ex1box;    // pointer to the solid envelope 
+		//~ G4LogicalVolume*   experimentalHall_log;    // pointer to the logical envelope
+		//~ G4VPhysicalVolume* expHallWorld;    // pointer to the physical envelope
+	
+		//~ G4Box*             ex1inbox;    // pointer to the solid envelope 
+		//~ G4LogicalVolume*   tracker_log;    // pointer to the logical envelope
+		//~ G4VPhysicalVolume* trackerPhys;    // pointer to the physical envelope
+
+
+};
+
+
+#endif

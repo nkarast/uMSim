@@ -1,0 +1,372 @@
+\hypertarget{classUMHit}{}\section{U\+M\+Hit Class Reference}
+\label{classUMHit}\index{U\+M\+Hit@{U\+M\+Hit}}
+
+
+{\ttfamily \#include $<$U\+M\+Hit.\+hh$>$}
+
+
+
+Inheritance diagram for U\+M\+Hit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classUMHit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\+M\+Hit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classUMHit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUMHit_a394e817a3a89fab49c06d00fda476050}{U\+M\+Hit} ()
+\begin{DoxyCompactList}\small\item\em Constructor and set the deposited energy to 0. \end{DoxyCompactList}\item 
+\hyperlink{classUMHit_a1baa8f810beaa912147438a9551b59e8}{$\sim$\+U\+M\+Hit} ()
+\begin{DoxyCompactList}\small\item\em Destructor -\/ None. \end{DoxyCompactList}\item 
+\hyperlink{classUMHit_aca5680bf533cac7ff218317ddbdac93b}{U\+M\+Hit} (const \hyperlink{classUMHit}{U\+M\+Hit} \&right)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+const \hyperlink{classUMHit}{U\+M\+Hit} \& \hyperlink{classUMHit_a2c5c0ca780f8089def10974f044c2111}{operator=} (const \hyperlink{classUMHit}{U\+M\+Hit} \&right)
+\begin{DoxyCompactList}\small\item\em Define = hit operator. \end{DoxyCompactList}\item 
+G4bool \hyperlink{classUMHit_af502a147d6cb493e5bacfde7019b1d0d}{operator==} (const \hyperlink{classUMHit}{U\+M\+Hit} \&right) const 
+\begin{DoxyCompactList}\small\item\em Define == hit operator. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classUMHit_a9ea7dddc4dd813d59f321443f653815d}{operator new} (size\+\_\+t)
+\item 
+void \hyperlink{classUMHit_a472a42be272e3bf0e2e01889051c0b42}{operator delete} (void $\ast$hit)
+\item 
+virtual void \hyperlink{classUMHit_ae0fb0c79824f713956c36d83ff8b2685}{Draw} ()
+\item 
+virtual void \hyperlink{classUMHit_ac06e6339f2a24ab539bb0b811bf85e8d}{Print} ()
+\item 
+void \hyperlink{classUMHit_af0222028e4ccfb5aa14ea5956ab8e6b7}{Set\+U\+M\+E\+Dep} (const G4double e)
+\begin{DoxyCompactList}\small\item\em Setter for Energy Deposit. \end{DoxyCompactList}\item 
+G4double \hyperlink{classUMHit_a972fd7fa5472ed40803bc78f90177c74}{Get\+U\+M\+E\+Dep} () const 
+\item 
+void \hyperlink{classUMHit_a782a87ef10c335a5e3046cb096f183f1}{Set\+Position} (const G4\+Three\+Vector xyz)
+\begin{DoxyCompactList}\small\item\em Setter for Position. \end{DoxyCompactList}\item 
+G4\+Three\+Vector \hyperlink{classUMHit_ad4fa003468a310edb749395e3dbb78c1}{Get\+Pos} () const 
+\begin{DoxyCompactList}\small\item\em Getter for position. \end{DoxyCompactList}\item 
+void \hyperlink{classUMHit_a1f872ac3231beb480095f417085d9205}{Set\+U\+M\+Particle\+Name} (const G4\+String pn)
+\begin{DoxyCompactList}\small\item\em Setter for Particle Name. \end{DoxyCompactList}\item 
+void \hyperlink{classUMHit_af922d50470b941d27f60668242885784}{Set\+U\+M\+Process\+Name} (const G4\+String pn)
+\begin{DoxyCompactList}\small\item\em Setter for Process Name. \end{DoxyCompactList}\item 
+G4\+String \hyperlink{classUMHit_ae91e909b64f2059f37b1068b594a25c6}{Get\+U\+M\+Particle\+Name} () const 
+\begin{DoxyCompactList}\small\item\em Getter for Process Name. \end{DoxyCompactList}\item 
+G4\+String \hyperlink{classUMHit_ade4194ef36b9553b403c60d31f031fdf}{Get\+U\+M\+Process\+Name} () const 
+\begin{DoxyCompactList}\small\item\em Getter for process name. \end{DoxyCompactList}\item 
+void \hyperlink{classUMHit_aa42edfe14f74310860d159eb4274a53c}{Set\+Mother\+I\+D} (const G4int M\+I\+D)
+\begin{DoxyCompactList}\small\item\em Setter for mother particle. \end{DoxyCompactList}\item 
+G4int \hyperlink{classUMHit_af9e683061a4dae1139102374b5a83283}{Get\+Mother\+I\+D} () const 
+\begin{DoxyCompactList}\small\item\em Getter for mother particle. \end{DoxyCompactList}\item 
+G4int \hyperlink{classUMHit_ad4c59e6ba7a5a0bc68d36d8b75f3b6c0}{Get\+U\+M\+Pdg\+Id} () const 
+\begin{DoxyCompactList}\small\item\em Getter for pdg I\+D. \end{DoxyCompactList}\item 
+void \hyperlink{classUMHit_a57b8887426a1eb3f888025c2408596f6}{Set\+U\+M\+Pdg\+Id} (const G4int pdgid)
+\begin{DoxyCompactList}\small\item\em Setter for pdf I\+D. \end{DoxyCompactList}\item 
+void \hyperlink{classUMHit_ad8f0847257537f21f4758459f5fa3dbd}{Add\+E\+Dep} (const double e)
+\begin{DoxyCompactList}\small\item\em Adding deposited energy to total deposited energy. \end{DoxyCompactList}\item 
+G4double \hyperlink{classUMHit_a1196b569b6874732e58dabb8ef49a567}{Get\+E\+Dep} () const 
+\begin{DoxyCompactList}\small\item\em Getter for deposited energy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G4double \hyperlink{classUMHit_aec0cf8d46f391050ad456c3713da6ba0}{U\+M\+E\+Dep}
+\item 
+G4double \hyperlink{classUMHit_a69d9bbb76e36dfececf0cbfc0f2f4f4b}{E\+Dep}
+\item 
+G4int \hyperlink{classUMHit_a62d959b08653e6d345dabdbc03a4305c}{Mother\+I\+D}
+\item 
+G4\+String \hyperlink{classUMHit_a7889f1c0495ffeb5cfe5cccd57d98f92}{U\+M\+Particle\+Name}
+\item 
+G4\+String \hyperlink{classUMHit_ac4f5fd214eb213afa3560a18d9b6120b}{U\+M\+Process\+Name}
+\item 
+G4\+Three\+Vector \hyperlink{classUMHit_a89b65132e5a6168e2f7e0fa93b8fd677}{Position}
+\item 
+G4int \hyperlink{classUMHit_a014c9504d8aed42c0eba0cf2a24c2713}{U\+M\+Pdg\+Id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header for Hit definition for the S\+D
+
+\begin{DoxyAuthor}{Author}
+Nikolaos Karastathis $<$ nkarast .at. cern .dot. ch $>$ 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v2.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classUMHit_a394e817a3a89fab49c06d00fda476050}{}\index{U\+M\+Hit@{U\+M\+Hit}!U\+M\+Hit@{U\+M\+Hit}}
+\index{U\+M\+Hit@{U\+M\+Hit}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{U\+M\+Hit()}]{\setlength{\rightskip}{0pt plus 5cm}U\+M\+Hit\+::\+U\+M\+Hit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_a394e817a3a89fab49c06d00fda476050}
+
+
+Constructor and set the deposited energy to 0. 
+
+\hypertarget{classUMHit_a1baa8f810beaa912147438a9551b59e8}{}\index{U\+M\+Hit@{U\+M\+Hit}!````~U\+M\+Hit@{$\sim$\+U\+M\+Hit}}
+\index{````~U\+M\+Hit@{$\sim$\+U\+M\+Hit}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{$\sim$\+U\+M\+Hit()}]{\setlength{\rightskip}{0pt plus 5cm}U\+M\+Hit\+::$\sim$\+U\+M\+Hit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_a1baa8f810beaa912147438a9551b59e8}
+
+
+Destructor -\/ None. 
+
+\hypertarget{classUMHit_aca5680bf533cac7ff218317ddbdac93b}{}\index{U\+M\+Hit@{U\+M\+Hit}!U\+M\+Hit@{U\+M\+Hit}}
+\index{U\+M\+Hit@{U\+M\+Hit}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{U\+M\+Hit(const U\+M\+Hit \&right)}]{\setlength{\rightskip}{0pt plus 5cm}U\+M\+Hit\+::\+U\+M\+Hit (
+\begin{DoxyParamCaption}
+\item[{const {\bf U\+M\+Hit} \&}]{right}
+\end{DoxyParamCaption}
+)}\label{classUMHit_aca5680bf533cac7ff218317ddbdac93b}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classUMHit_ad8f0847257537f21f4758459f5fa3dbd}{}\index{U\+M\+Hit@{U\+M\+Hit}!Add\+E\+Dep@{Add\+E\+Dep}}
+\index{Add\+E\+Dep@{Add\+E\+Dep}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Add\+E\+Dep(const double e)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Hit\+::\+Add\+E\+Dep (
+\begin{DoxyParamCaption}
+\item[{const double}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_ad8f0847257537f21f4758459f5fa3dbd}
+
+
+Adding deposited energy to total deposited energy. 
+
+\hypertarget{classUMHit_ae0fb0c79824f713956c36d83ff8b2685}{}\index{U\+M\+Hit@{U\+M\+Hit}!Draw@{Draw}}
+\index{Draw@{Draw}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Draw()}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Hit\+::\+Draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classUMHit_ae0fb0c79824f713956c36d83ff8b2685}
+pass \hypertarget{classUMHit_a1196b569b6874732e58dabb8ef49a567}{}\index{U\+M\+Hit@{U\+M\+Hit}!Get\+E\+Dep@{Get\+E\+Dep}}
+\index{Get\+E\+Dep@{Get\+E\+Dep}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Get\+E\+Dep() const }]{\setlength{\rightskip}{0pt plus 5cm}G4double U\+M\+Hit\+::\+Get\+E\+Dep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_a1196b569b6874732e58dabb8ef49a567}
+
+
+Getter for deposited energy. 
+
+\hypertarget{classUMHit_af9e683061a4dae1139102374b5a83283}{}\index{U\+M\+Hit@{U\+M\+Hit}!Get\+Mother\+I\+D@{Get\+Mother\+I\+D}}
+\index{Get\+Mother\+I\+D@{Get\+Mother\+I\+D}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Get\+Mother\+I\+D() const }]{\setlength{\rightskip}{0pt plus 5cm}G4int U\+M\+Hit\+::\+Get\+Mother\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_af9e683061a4dae1139102374b5a83283}
+
+
+Getter for mother particle. 
+
+\hypertarget{classUMHit_ad4fa003468a310edb749395e3dbb78c1}{}\index{U\+M\+Hit@{U\+M\+Hit}!Get\+Pos@{Get\+Pos}}
+\index{Get\+Pos@{Get\+Pos}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Get\+Pos() const }]{\setlength{\rightskip}{0pt plus 5cm}G4\+Three\+Vector U\+M\+Hit\+::\+Get\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_ad4fa003468a310edb749395e3dbb78c1}
+
+
+Getter for position. 
+
+\hypertarget{classUMHit_a972fd7fa5472ed40803bc78f90177c74}{}\index{U\+M\+Hit@{U\+M\+Hit}!Get\+U\+M\+E\+Dep@{Get\+U\+M\+E\+Dep}}
+\index{Get\+U\+M\+E\+Dep@{Get\+U\+M\+E\+Dep}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Get\+U\+M\+E\+Dep() const }]{\setlength{\rightskip}{0pt plus 5cm}G4double U\+M\+Hit\+::\+Get\+U\+M\+E\+Dep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_a972fd7fa5472ed40803bc78f90177c74}
+\hypertarget{classUMHit_ae91e909b64f2059f37b1068b594a25c6}{}\index{U\+M\+Hit@{U\+M\+Hit}!Get\+U\+M\+Particle\+Name@{Get\+U\+M\+Particle\+Name}}
+\index{Get\+U\+M\+Particle\+Name@{Get\+U\+M\+Particle\+Name}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Get\+U\+M\+Particle\+Name() const }]{\setlength{\rightskip}{0pt plus 5cm}G4\+String U\+M\+Hit\+::\+Get\+U\+M\+Particle\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_ae91e909b64f2059f37b1068b594a25c6}
+
+
+Getter for Process Name. 
+
+\hypertarget{classUMHit_ad4c59e6ba7a5a0bc68d36d8b75f3b6c0}{}\index{U\+M\+Hit@{U\+M\+Hit}!Get\+U\+M\+Pdg\+Id@{Get\+U\+M\+Pdg\+Id}}
+\index{Get\+U\+M\+Pdg\+Id@{Get\+U\+M\+Pdg\+Id}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Get\+U\+M\+Pdg\+Id() const }]{\setlength{\rightskip}{0pt plus 5cm}G4int U\+M\+Hit\+::\+Get\+U\+M\+Pdg\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_ad4c59e6ba7a5a0bc68d36d8b75f3b6c0}
+
+
+Getter for pdg I\+D. 
+
+\hypertarget{classUMHit_ade4194ef36b9553b403c60d31f031fdf}{}\index{U\+M\+Hit@{U\+M\+Hit}!Get\+U\+M\+Process\+Name@{Get\+U\+M\+Process\+Name}}
+\index{Get\+U\+M\+Process\+Name@{Get\+U\+M\+Process\+Name}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Get\+U\+M\+Process\+Name() const }]{\setlength{\rightskip}{0pt plus 5cm}G4\+String U\+M\+Hit\+::\+Get\+U\+M\+Process\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_ade4194ef36b9553b403c60d31f031fdf}
+
+
+Getter for process name. 
+
+\hypertarget{classUMHit_a472a42be272e3bf0e2e01889051c0b42}{}\index{U\+M\+Hit@{U\+M\+Hit}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{operator delete(void $\ast$hit)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Hit\+::operator delete (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{hit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_a472a42be272e3bf0e2e01889051c0b42}
+\hypertarget{classUMHit_a9ea7dddc4dd813d59f321443f653815d}{}\index{U\+M\+Hit@{U\+M\+Hit}!operator new@{operator new}}
+\index{operator new@{operator new}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{operator new(size\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ U\+M\+Hit\+::operator new (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_a9ea7dddc4dd813d59f321443f653815d}
+\hypertarget{classUMHit_a2c5c0ca780f8089def10974f044c2111}{}\index{U\+M\+Hit@{U\+M\+Hit}!operator=@{operator=}}
+\index{operator=@{operator=}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{operator=(const U\+M\+Hit \&right)}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf U\+M\+Hit} \& U\+M\+Hit\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf U\+M\+Hit} \&}]{right}
+\end{DoxyParamCaption}
+)}\label{classUMHit_a2c5c0ca780f8089def10974f044c2111}
+
+
+Define = hit operator. 
+
+\hypertarget{classUMHit_af502a147d6cb493e5bacfde7019b1d0d}{}\index{U\+M\+Hit@{U\+M\+Hit}!operator==@{operator==}}
+\index{operator==@{operator==}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{operator==(const U\+M\+Hit \&right) const }]{\setlength{\rightskip}{0pt plus 5cm}G4bool U\+M\+Hit\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf U\+M\+Hit} \&}]{right}
+\end{DoxyParamCaption}
+) const}\label{classUMHit_af502a147d6cb493e5bacfde7019b1d0d}
+
+
+Define == hit operator. 
+
+\hypertarget{classUMHit_ac06e6339f2a24ab539bb0b811bf85e8d}{}\index{U\+M\+Hit@{U\+M\+Hit}!Print@{Print}}
+\index{Print@{Print}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Print()}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Hit\+::\+Print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classUMHit_ac06e6339f2a24ab539bb0b811bf85e8d}
+std\+::ofstream fout(\char`\"{}hits.\+out\char`\"{},ios\+::app); fout $<$$<$ std\+::setw(10) $<$$<$ U\+M\+E\+Dep $<$$<$ \textquotesingle{}\textquotesingle{} $<$$<$ std\+::setw(20) $<$$<$ G4\+Best\+Unit(Position, \char`\"{}\+Length\char`\"{}) $<$$<$ \char`\"{}\textbackslash{}n\char`\"{}; \hypertarget{classUMHit_aa42edfe14f74310860d159eb4274a53c}{}\index{U\+M\+Hit@{U\+M\+Hit}!Set\+Mother\+I\+D@{Set\+Mother\+I\+D}}
+\index{Set\+Mother\+I\+D@{Set\+Mother\+I\+D}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Set\+Mother\+I\+D(const G4int M\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Hit\+::\+Set\+Mother\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const G4int}]{M\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_aa42edfe14f74310860d159eb4274a53c}
+
+
+Setter for mother particle. 
+
+\hypertarget{classUMHit_a782a87ef10c335a5e3046cb096f183f1}{}\index{U\+M\+Hit@{U\+M\+Hit}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Set\+Position(const G4\+Three\+Vector xyz)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Hit\+::\+Set\+Position (
+\begin{DoxyParamCaption}
+\item[{const G4\+Three\+Vector}]{xyz}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_a782a87ef10c335a5e3046cb096f183f1}
+
+
+Setter for Position. 
+
+\hypertarget{classUMHit_af0222028e4ccfb5aa14ea5956ab8e6b7}{}\index{U\+M\+Hit@{U\+M\+Hit}!Set\+U\+M\+E\+Dep@{Set\+U\+M\+E\+Dep}}
+\index{Set\+U\+M\+E\+Dep@{Set\+U\+M\+E\+Dep}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Set\+U\+M\+E\+Dep(const G4double e)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Hit\+::\+Set\+U\+M\+E\+Dep (
+\begin{DoxyParamCaption}
+\item[{const G4double}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_af0222028e4ccfb5aa14ea5956ab8e6b7}
+
+
+Setter for Energy Deposit. 
+
+\hypertarget{classUMHit_a1f872ac3231beb480095f417085d9205}{}\index{U\+M\+Hit@{U\+M\+Hit}!Set\+U\+M\+Particle\+Name@{Set\+U\+M\+Particle\+Name}}
+\index{Set\+U\+M\+Particle\+Name@{Set\+U\+M\+Particle\+Name}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Set\+U\+M\+Particle\+Name(const G4\+String pn)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Hit\+::\+Set\+U\+M\+Particle\+Name (
+\begin{DoxyParamCaption}
+\item[{const G4\+String}]{pn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_a1f872ac3231beb480095f417085d9205}
+
+
+Setter for Particle Name. 
+
+\hypertarget{classUMHit_a57b8887426a1eb3f888025c2408596f6}{}\index{U\+M\+Hit@{U\+M\+Hit}!Set\+U\+M\+Pdg\+Id@{Set\+U\+M\+Pdg\+Id}}
+\index{Set\+U\+M\+Pdg\+Id@{Set\+U\+M\+Pdg\+Id}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Set\+U\+M\+Pdg\+Id(const G4int pdgid)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Hit\+::\+Set\+U\+M\+Pdg\+Id (
+\begin{DoxyParamCaption}
+\item[{const G4int}]{pdgid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_a57b8887426a1eb3f888025c2408596f6}
+
+
+Setter for pdf I\+D. 
+
+\hypertarget{classUMHit_af922d50470b941d27f60668242885784}{}\index{U\+M\+Hit@{U\+M\+Hit}!Set\+U\+M\+Process\+Name@{Set\+U\+M\+Process\+Name}}
+\index{Set\+U\+M\+Process\+Name@{Set\+U\+M\+Process\+Name}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Set\+U\+M\+Process\+Name(const G4\+String pn)}]{\setlength{\rightskip}{0pt plus 5cm}void U\+M\+Hit\+::\+Set\+U\+M\+Process\+Name (
+\begin{DoxyParamCaption}
+\item[{const G4\+String}]{pn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classUMHit_af922d50470b941d27f60668242885784}
+
+
+Setter for Process Name. 
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classUMHit_a69d9bbb76e36dfececf0cbfc0f2f4f4b}{}\index{U\+M\+Hit@{U\+M\+Hit}!E\+Dep@{E\+Dep}}
+\index{E\+Dep@{E\+Dep}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{E\+Dep}]{\setlength{\rightskip}{0pt plus 5cm}G4double U\+M\+Hit\+::\+E\+Dep\hspace{0.3cm}{\ttfamily [private]}}\label{classUMHit_a69d9bbb76e36dfececf0cbfc0f2f4f4b}
+\hypertarget{classUMHit_a62d959b08653e6d345dabdbc03a4305c}{}\index{U\+M\+Hit@{U\+M\+Hit}!Mother\+I\+D@{Mother\+I\+D}}
+\index{Mother\+I\+D@{Mother\+I\+D}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Mother\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}G4int U\+M\+Hit\+::\+Mother\+I\+D\hspace{0.3cm}{\ttfamily [private]}}\label{classUMHit_a62d959b08653e6d345dabdbc03a4305c}
+\hypertarget{classUMHit_a89b65132e5a6168e2f7e0fa93b8fd677}{}\index{U\+M\+Hit@{U\+M\+Hit}!Position@{Position}}
+\index{Position@{Position}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{Position}]{\setlength{\rightskip}{0pt plus 5cm}G4\+Three\+Vector U\+M\+Hit\+::\+Position\hspace{0.3cm}{\ttfamily [private]}}\label{classUMHit_a89b65132e5a6168e2f7e0fa93b8fd677}
+\hypertarget{classUMHit_aec0cf8d46f391050ad456c3713da6ba0}{}\index{U\+M\+Hit@{U\+M\+Hit}!U\+M\+E\+Dep@{U\+M\+E\+Dep}}
+\index{U\+M\+E\+Dep@{U\+M\+E\+Dep}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{U\+M\+E\+Dep}]{\setlength{\rightskip}{0pt plus 5cm}G4double U\+M\+Hit\+::\+U\+M\+E\+Dep\hspace{0.3cm}{\ttfamily [private]}}\label{classUMHit_aec0cf8d46f391050ad456c3713da6ba0}
+\hypertarget{classUMHit_a7889f1c0495ffeb5cfe5cccd57d98f92}{}\index{U\+M\+Hit@{U\+M\+Hit}!U\+M\+Particle\+Name@{U\+M\+Particle\+Name}}
+\index{U\+M\+Particle\+Name@{U\+M\+Particle\+Name}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{U\+M\+Particle\+Name}]{\setlength{\rightskip}{0pt plus 5cm}G4\+String U\+M\+Hit\+::\+U\+M\+Particle\+Name\hspace{0.3cm}{\ttfamily [private]}}\label{classUMHit_a7889f1c0495ffeb5cfe5cccd57d98f92}
+\hypertarget{classUMHit_a014c9504d8aed42c0eba0cf2a24c2713}{}\index{U\+M\+Hit@{U\+M\+Hit}!U\+M\+Pdg\+Id@{U\+M\+Pdg\+Id}}
+\index{U\+M\+Pdg\+Id@{U\+M\+Pdg\+Id}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{U\+M\+Pdg\+Id}]{\setlength{\rightskip}{0pt plus 5cm}G4int U\+M\+Hit\+::\+U\+M\+Pdg\+Id\hspace{0.3cm}{\ttfamily [private]}}\label{classUMHit_a014c9504d8aed42c0eba0cf2a24c2713}
+\hypertarget{classUMHit_ac4f5fd214eb213afa3560a18d9b6120b}{}\index{U\+M\+Hit@{U\+M\+Hit}!U\+M\+Process\+Name@{U\+M\+Process\+Name}}
+\index{U\+M\+Process\+Name@{U\+M\+Process\+Name}!U\+M\+Hit@{U\+M\+Hit}}
+\subsubsection[{U\+M\+Process\+Name}]{\setlength{\rightskip}{0pt plus 5cm}G4\+String U\+M\+Hit\+::\+U\+M\+Process\+Name\hspace{0.3cm}{\ttfamily [private]}}\label{classUMHit_ac4f5fd214eb213afa3560a18d9b6120b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{UMHit_8hh}{U\+M\+Hit.\+hh}\item 
+src/\hyperlink{UMHit_8cc}{U\+M\+Hit.\+cc}\end{DoxyCompactItemize}
